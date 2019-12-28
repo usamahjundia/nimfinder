@@ -1,0 +1,44 @@
+.List {
+    display: flex;
+    width:80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.List-list {
+    /* text-align: center; */
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.List-elements {
+    /* text-align: center; */
+    border: 2px solid white;
+    align-items: center;
+    margin-top: 8px;
+    padding: 8px;
+    color: white;
+    background-color: rgba(36, 33, 33,0.7);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.List-elements-emblem{
+    width: 25%;
+    text-align: left;
+    margin-right: 32px;
+}
+
+.List-elements-name{
+    width: 100%;
+    text-align: left;
+}
+
+.List-elements-nim{
+    /* flex-; */
+    width: 100%;
+    text-align: right;
+}

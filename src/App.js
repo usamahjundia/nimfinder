@@ -1,26 +1,59 @@
-import React from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import SearchBar from './SearchBar';
+import List from './List';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    let [searchBarState, changeSearchBarState] = useState("");
+    let allmhsRef = useRef(undefined);
+    let [shownMahasiswa, changeShownMahasiswa] = useState([]);
+    let [loading, setLoading] = useState(false);
+    useEffect(()=>{
+        setLoading(true)
+        if(localStorage.getItem("data_mahasiswa") == null){
+            (async ()=>{
+                let temp = await fetch('/data/mahasiswa_compressed.json');
+                temp = await temp.text();
+                // console.log(temp.text);
+                localStorage.setItem("data_mahasiswa",temp);
+                setLoading(false);
+            })();
+        }else{
+            (async () => {
+                let temp = localStorage.getItem("data_mahasiswa");
+                allmhsRef.current = JSON.parse(temp);
+                setLoading(false);
+            })()
+        }
+    },[]);
+    useEffect(()=>{
+        if(searchBarState === '' || searchBarState.length < 3){
+            changeShownMahasiswa([]);
+        }else{
+            setLoading(true);
+            (async()=>{
+                let temp = await allmhsRef.current.filter((elmt)=>{
+                    return (elmt[0].toLowerCase().indexOf(searchBarState) !== -1) || (elmt[2].indexOf(searchBarState) !== -1) || (elmt[1] ? false :  (elmt[3].indexOf(searchBarState) !== -1))
+                });
+                changeShownMahasiswa(temp);
+                setLoading(false);
+            })()
+        }
+    },[searchBarState]);
+    return (
+        <div className="App">
+            <h1 className='Title'>NIM Finder ITB</h1>
+            <SearchBar 
+                searchBarState={searchBarState}
+                changeSearchBarState={changeSearchBarState}
+                />
+            <List
+                loading={loading}
+                mhsList={shownMahasiswa}
+            />
+        </div>
+    );
 }
 
 export default App;
