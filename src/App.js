@@ -10,13 +10,15 @@ function App() {
     let [shownMahasiswa, changeShownMahasiswa] = useState([]);
     let [loading, setLoading] = useState(false);
     useEffect(()=>{
+        console.log(process.env.PUBLIC_URL);
         setLoading(true)
         if(localStorage.getItem("data_mahasiswa") == null){
             (async ()=>{
-                let temp = await fetch('/data/mahasiswa_compressed.json');
+                let temp = await fetch(`${process.env.PUBLIC_URL}/data/mahasiswa_compressed.json`);
                 temp = await temp.text();
-                // console.log(temp.text);
+                // console.log(temp);
                 localStorage.setItem("data_mahasiswa",temp);
+                allmhsRef.current  = JSON.parse(temp);
                 setLoading(false);
             })();
         }else{
@@ -47,6 +49,7 @@ function App() {
             <SearchBar 
                 searchBarState={searchBarState}
                 changeSearchBarState={changeSearchBarState}
+                // loading={loading}
                 />
             <List
                 loading={loading}

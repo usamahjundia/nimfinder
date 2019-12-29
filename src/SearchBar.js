@@ -1,7 +1,7 @@
 import React from 'react'
 import './SearchBar.css'
 
-export default function SearchBar({searchBarState,changeSearchBarState}){
+export default function SearchBar({searchBarState,changeSearchBarState,loading}){
 
     const changeState = (e)=>{
         changeSearchBarState(e.target.value.toLowerCase());
@@ -18,6 +18,7 @@ export default function SearchBar({searchBarState,changeSearchBarState}){
                 name="searchValue"
                 value={searchBarState}
                 onChange={changeState}
+                // disabled={loading}
             />
         </div>
     )
