@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/nimfinder/static/css/main.d1f06d36.chunk.css",
+    "main.js": "/nimfinder/static/js/main.37c509e9.chunk.js",
+    "main.js.map": "/nimfinder/static/js/main.37c509e9.chunk.js.map",
+    "runtime-main.js": "/nimfinder/static/js/runtime-main.ef80c007.js",
+    "runtime-main.js.map": "/nimfinder/static/js/runtime-main.ef80c007.js.map",
+    "static/js/2.29f03be4.chunk.js": "/nimfinder/static/js/2.29f03be4.chunk.js",
+    "static/js/2.29f03be4.chunk.js.map": "/nimfinder/static/js/2.29f03be4.chunk.js.map",
+    "index.html": "/nimfinder/index.html",
+    "precache-manifest.0df8ea320fd1e755664cab9367f0d5a1.js": "/nimfinder/precache-manifest.0df8ea320fd1e755664cab9367f0d5a1.js",
+    "service-worker.js": "/nimfinder/service-worker.js",
+    "static/css/main.d1f06d36.chunk.css.map": "/nimfinder/static/css/main.d1f06d36.chunk.css.map",
+    "static/js/2.29f03be4.chunk.js.LICENSE": "/nimfinder/static/js/2.29f03be4.chunk.js.LICENSE",
+    "static/media/logo.svg": "/nimfinder/static/media/logo.5d5d9eef.svg",
+    "static/media/index.css": "/nimfinder/static/media/minecraft_font.6ab539c6.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef80c007.js",
+    "static/js/2.29f03be4.chunk.js",
+    "static/css/main.d1f06d36.chunk.css",
+    "static/js/main.37c509e9.chunk.js"
+  ]
+}
