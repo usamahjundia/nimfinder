@@ -8,13 +8,16 @@ html {
     background-repeat: repeat;
     background-color: rgba(0,0,0,0.6);
     background-blend-mode: multiply;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: "minecraft_font";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+    font-family: "minecraft_font";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .Title {

@@ -1,18 +1,24 @@
 .Searchbar {
+    display: flex;
+    flex-direction: column;
     padding: 16px 16px;
     color: white;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
-    align-content: center;
+    justify-content: center;
 }
 
 .Searchbar-input {
+    /* margin: 0 auto; */
+    box-sizing: content-box;
     border: 2px solid white;
     background-color: black;
     color: white;
     font-size: 18px;
     font-family: "minecraft_font";
     padding: 12px;
+    max-width: 360px;
+    margin: 0 auto;
 }
 
 .Searchbar-input:focus {

@@ -24,6 +24,8 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    box-sizing: border-box;
+    /* flex-wrap: wrap; */
 }
 
 .List-elements-emblem{
@@ -41,4 +43,51 @@
     /* flex-; */
     width: 100%;
     text-align: right;
+}
+
+.List-elements-minfo{
+    /* text-align: left; */
+    width: 75%;
+    align-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 600px){
+    .List {
+        display: flex;
+        width:100%; 
+        justify-content: center;
+    }
+    
+    .List-list {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+    
+    .List-elements {
+        flex-direction: row;
+    }
+    
+    .List-elements-emblem{
+        width: 25%;
+        text-align: left;
+        margin-right: 32px;
+    }
+    
+    .List-elements-name{
+        width: 100%;
+        text-align: right;
+    }
+    
+    .List-elements-nim{
+        /* flex-; */
+        width: 100%;
+        text-align: right;
+    }
+
+    .List-elements-minfo{
+        flex-direction: column;
+    }
 }
