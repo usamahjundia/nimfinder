@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/nimfinder/static/css/main.d1f06d36.chunk.css",
-    "main.js": "/nimfinder/static/js/main.37c509e9.chunk.js",
-    "main.js.map": "/nimfinder/static/js/main.37c509e9.chunk.js.map",
+    "main.js": "/nimfinder/static/js/main.fc6da768.chunk.js",
+    "main.js.map": "/nimfinder/static/js/main.fc6da768.chunk.js.map",
     "runtime-main.js": "/nimfinder/static/js/runtime-main.ef80c007.js",
     "runtime-main.js.map": "/nimfinder/static/js/runtime-main.ef80c007.js.map",
     "static/js/2.29f03be4.chunk.js": "/nimfinder/static/js/2.29f03be4.chunk.js",
     "static/js/2.29f03be4.chunk.js.map": "/nimfinder/static/js/2.29f03be4.chunk.js.map",
     "index.html": "/nimfinder/index.html",
-    "precache-manifest.0df8ea320fd1e755664cab9367f0d5a1.js": "/nimfinder/precache-manifest.0df8ea320fd1e755664cab9367f0d5a1.js",
+    "precache-manifest.bb367419292500079f67dc5a2f38bba8.js": "/nimfinder/precache-manifest.bb367419292500079f67dc5a2f38bba8.js",
     "service-worker.js": "/nimfinder/service-worker.js",
     "static/css/main.d1f06d36.chunk.css.map": "/nimfinder/static/css/main.d1f06d36.chunk.css.map",
     "static/js/2.29f03be4.chunk.js.LICENSE": "/nimfinder/static/js/2.29f03be4.chunk.js.LICENSE",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.ef80c007.js",
     "static/js/2.29f03be4.chunk.js",
     "static/css/main.d1f06d36.chunk.css",
-    "static/js/main.37c509e9.chunk.js"
+    "static/js/main.fc6da768.chunk.js"
   ]
 }
