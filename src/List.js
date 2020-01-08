@@ -88,14 +88,14 @@ export default function List({ loading, mhsList }) {
                     return (
                         <div className="List-elements">
                             <div className="List-elements-emblem">
-                                {elmt[1] ? codeToEmblem(elmt[2]) : codeToEmblem(elmt[3])}
+                                {codeToEmblem(elmt[1])}
                             </div>
                             <div className="List-elements-minfo">
                                 <div className="List-elements-name">
                                     {elmt[0]}
                                 </div>
                                 <div className="List-elements-nim">
-                                    {elmt[1] ? false : elmt[3] + "/"}{elmt[2]}
+                                    {elmt[1]}{elmt.length === 3 ? "/"+elmt[2] : false}
                                 </div>
                             </div>
                         </div>
